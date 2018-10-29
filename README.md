@@ -10,7 +10,7 @@ This program will be run by the Aragon Association and representatives of the di
 ## Scope 
 The focus of the program is the selection of independent teams that will work on the core components and products of the Aragon project. The funds are intended to cover:
 
-- The operation costs for the research, development and maintenance of the Aragon products and ecosystem for the period of a year, and
+- The operation costs for the research, development and maintenance of the Aragon products and ecosystem for the period of one year, and
 - An incentivization package in ANT
 
 ## Application process
@@ -21,7 +21,7 @@ The application process is open and public and it will take place in this dedica
 - Create a new directory with the team’s name inside the *teams/* folder
 - Inside the directory, create one file: *team.md* ([see template](https://github.com/aragon/flock/blob/master/docs/templates/team.md)), where you present the team
 - Create a pull request to merge your submission into the Flock repository. In that pull request fill in all the relevant info described in the template
-- Amendments to the initial proposal can be made by creating a pull request over the existent pull request for the relevant review.  If the amendment is product related it will have to go through the AIP process.
+- Amendments to the initial proposal can be made by creating a pull request over the existent pull request for the relevant review.  If the amendment is product related it will have to go through the [AIP process](https://docs.google.com/document/d/1-qrVNSWtZD3TwusRL-ZkVeDRAukjGCfveR0RYfzNb8c/edit#).
 
 The Aragon Association and representatives of the current Aragon teams will review and approve the relevant applications but the community is invited to participate in the public discussion that will take place in the comments of the relevant pull request. 
 
@@ -33,13 +33,13 @@ Part of the funding is intended to cover the annual operating cost of each team.
 
 **Incentivization package**
 
-To align the interests of the teams with the creation of value of the Aragon Network, increase the team motivation and incentivize long term commitment, every team will be given an incentivization package in ANT. This incentivization package gives the team governance power over the project and economic upside. This incentive will be subject to vesting. 
+To align the interests of the teams with the creation of value of the Aragon Network, increase the team motivation and incentivize long term commitment, every team will be given an incentivization package in ANT. This incentivization package gives the team governance power over the project and the potential for greater financial upside. This incentive will be subject to vesting. 
 
 After the definitive approval of funding as per the AGP-1 process, funds for operating costs will be disbursed to the approved teams in a lump sum.
 
 ## Decision rationale
 
-Decisions are made by the Aragon Association and representatives of the independent teams that are already part of the Aragon project. Everybody will participate in the review process. All decisions must be consistent with the goals and values of the Aragon project and represent the interests of the Aragon community.
+Decisions are made by the Aragon Association and representatives of the independent teams that are already part of the Aragon project. Everybody will participate in the review process. All decisions must be consistent with the [goals and values](https://github.com/aragon/AGPs/blob/master/AGPs/AGP-0.md) of the Aragon project and represent the interests of the Aragon community.
 
 **What do we look for in teams** 
 
