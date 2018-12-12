@@ -21,7 +21,7 @@ The application process is open and public and it will take place in this dedica
 - Create a new directory with the team’s name inside the *teams/* folder
 - Inside the directory, create one file: *team.md* ([see template](https://github.com/aragon/flock/blob/master/docs/templates/team.md)), where you present the team
 - Create a pull request to merge your submission into the Flock repository. In that pull request fill in all the relevant info described in the template
-- Amendments to the initial proposal can be made by creating a pull request over the existent pull request for the relevant review.  If the amendment is product related it will have to go through the [AIP process](https://docs.google.com/document/d/1-qrVNSWtZD3TwusRL-ZkVeDRAukjGCfveR0RYfzNb8c/edit#).
+- Amendments to the initial proposal can be made by creating a pull request over the existent pull request for the relevant review.  
 
 The Aragon Association and representatives of the current Aragon teams will review and approve the relevant applications but the community is invited to participate in the public discussion that will take place in the comments of the relevant pull request.
 
