@@ -29,7 +29,7 @@ The Aragon Association and representatives of the current Aragon teams will revi
 
 **Operation costs**
 
-Part of the funding is intended to cover the annual operating cost of each team. The minimum amount of funds available for operations is $1 million paid in ETH or DAI.
+Part of the funding is intended to cover the operating cost of each team. The funds are available in ETH or DAI.
 
 **Incentivization package**
 
