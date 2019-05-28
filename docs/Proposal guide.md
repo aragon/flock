@@ -2,8 +2,9 @@
 
 ## 1. Summary
 
-- This section should include the high level strategy of the proposal in simple terms.
-- It can be accompanied by a few references from past team achievements. In case the applicant team is an ongoing Flock team it can join the previously achieved roadmap and its most recent community reports.
+This section should include the high level strategy of the proposal in simple terms. It can be accompanied by a few references from past team achievements.
+
+In case the applicant team is an ongoing Flock team it can join the previously achieved roadmap and its most recent community reports.
 
 
 ## 2. Deliverables
@@ -24,27 +25,27 @@ Note: categories can be invented as needed by the applicant team.
 *In this section are provided all the concrete elements the applicant team is planning to work on. These should be listed as initiatives by order of priority.*
 
 For each initiative, in order to justify it is relevant please detail shortly:
-- Value proposition - *How it will provide value to the end user (i.e. developer or end user)*
-- Deliverables - *What precisely will be implemented in regard of this initiative*
-- Background - *A link to a Github issue, a Flock roadmap item, a Nest proposal, user feedback, or any material backing its relevancy*
-- Long-term vision of initiative - *This last item is optional*
+- **Value proposition** - *How it will provide value to the end user (i.e. developer or end user)*
+- **Deliverables** - *What precisely will be implemented in regard of this initiative*
+- **Background** - *A link to a Github issue, a Flock roadmap item, a Nest proposal, user feedback, or any material backing its relevancy*
+- **Long-term vision for initiative** - *This last item is optional*
 
 #### Example
 
 *Here is an example of initiative inspired from a past Flock proposal*
 
 > ### I01 - Fundraising
-> 
+> #### Value proposition
 > The goal of this topic is to provide a library and a standalone dApp any Aragon DAO can use to raise funds through a Continuous Funding scheme.
-> 
+>
 > #### Deliverables
-> 
+>
 > **Fundraising library:** Develop a modular fundraising library providing low-level building-blocks: curves, taxation mechanisms, withdrawal mechanisms, etc.
-> 
+>
 > **Fundraising app:** Develop an opinionated but ready-to-use fundraising app - based on the previous library - implementing the [Apiary][link] scheme designed by [@lkngtn][link].
-> 
+>
 > #### Background
-> 
+>
 > A PoC of such a fundraising app is already available [here][link] and demoed [here][link].
 
 
@@ -52,10 +53,12 @@ For each initiative, in order to justify it is relevant please detail shortly:
 
 *Your estimated operating cost for successfully building the Aragon Project  and the estimated ANT package that you would need to incentivize the team long term commitment*
 
+*Regarding the ANT package please be sure to provide the number of ANT per team member per year.*
+
 #### Example
 
 > ### Estimated operating costs for Q2 and Q3 2019
-> 
+>
 > | Type        |              Description               | Amount |
 > | ----------- | :------------------------------------: | -----: |
 > | Payroll     |                                        | \$410k |
@@ -66,35 +69,35 @@ For each initiative, in order to justify it is relevant please detail shortly:
 > | **Total**   |                                        | \$450k |
 
 
-*Regarding the ANT package please be sure to provide the number of ANT per team member per year.*
+
 
 > ### ANT package
-> 
+>
 > We would like to request **25k ANT per team member per year** for incentivization purpose, i.e. **125k ANT** for this six months long proposal. We are committed to the Aragon Network in the long-term and therefore accept a 4-years vesting schedule.
 
 ## 4. Team
 
 *This is the basic structure you should follow when creating your proposal where you briefly describe of the current team members and their relevancy for the role with links to their relevant social media channels (github, twitter, etc) and provide info of future openings if you plan to hire more people during the year.*
 
-### AraEagles Example Team
+#### AraEagles Example Team
 
-- #### John Doe — Project Lead
-
-John has 20 years of experience coding Solidity. He bought Bitcoin in 1995, therefore inventing the blockchain. He admits to be the real Craig Wright.
-
-**Socials**: [GitHub](#) [Twitter](#)
-
-- #### Satoshi Nakamoto — Frontend Dev
-
-Satoshi loves React and React Native. He met John 5 years ago in a hackathon
-
-**Socials**: [GitHub](#) [Twitter](#)
-
-- #### Maria Garcia — Security Researcher
-
-Maria has been working on different projects in the Ethereum both creating and auditing smart contracts. She would like to work full time on pure research.
-
-**Socials**: [GitHub](#) [Twitter](#)
+> - #### John Doe — Project Lead
+>
+> John has 20 years of experience coding Solidity. He bought Bitcoin in 1995, therefore inventing the blockchain. He admits to be the real Craig Wright.
+>
+> **Socials**: [GitHub](#) [Twitter](#)
+>
+> - #### Satoshi Nakamoto — Frontend Dev
+>
+> Satoshi loves React and React Native. He met John 5 years ago in a hackathon
+>
+> **Socials**: [GitHub](#) [Twitter](#)
+>
+> - #### Maria Garcia — Security Researcher
+>
+> Maria has been working on different projects in the Ethereum both creating and auditing smart contracts. She would like to work full time on pure research.
+>
+> **Socials**: [GitHub](#) [Twitter](#)
 
 ## 5. Requirements
 
