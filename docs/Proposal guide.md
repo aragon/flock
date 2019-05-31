@@ -106,12 +106,12 @@ For each initiative, the applicant team should cover the following items:
 
 *List of aragon accounts, channels, tools, assets, domains and infrastructure that you need in order to operate*
 
-| Access to                                                                        | Yes/No | If Yes, precise why          |
+| Access to                                                                        | Yes/No | If Yes, precise what and why |
 |----------------------------------------------------------------------------------|--------|------------------------------|
-| Blog access  on blog.aragon.org                                                  |        |                              |
-| Social media access                                                              |        |                              |
-| Website access on  all Aragon domains                                            |        |                              |
-| Repo access on the entire  @aragon organization                                  |        |                              |
+| Blog accesses:                                                                   |        |                              |
+| Social media accesses:                                                           |        |                              |
+| Website accesses:                                                                |        |                              |
+| Repo accesses:                                                                   |        |                              |
 | Unrestricted use of  the Aragon trademark                                        |        |                              |
 | Publish access  to aragonpm.eth                                                  |        |                              |
 | Access to Aragon servers  and cloud infrastructure                               |        |                              |
