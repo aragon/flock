@@ -2,7 +2,7 @@
 
 ## 1. Summary
 
-*This section should include the high level strategy of the proposal in simple terms. It can be accompanied by a few references from past team achievements.*
+*This section should detail the high level strategy of the proposal in simple terms. It can be accompanied by a few references from past team achievements.*
 
 *In case the applicant team is an ongoing Flock team it can join the previously achieved roadmap and its most recent community reports.*
 
