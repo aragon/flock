@@ -2,15 +2,15 @@
 
 ## 1. Summary
 
-This section should include the high level strategy of the proposal in simple terms. It can be accompanied by a few references from past team achievements.
+*This section should include the high level strategy of the proposal in simple terms. It can be accompanied by a few references from past team achievements.
 
-In case the applicant team is an ongoing Flock team it can join the previously achieved roadmap and its most recent community reports.
+In case the applicant team is an ongoing Flock team it can join the previously achieved roadmap and its most recent community reports.*
 
 
 ## 2. Deliverables
 
 ### Deliverables summary table
-*This table aims at giving a visual summary of the focus of the team and the allocation of team effort to each category of deliverables. Evaluating such future data is difficult, but the thought exercise provides a good idea of the mindset of the team and its general focus.*
+*This table aims at giving a visual summary of the applicant team's effort allocation over the different categories of deliverables.*
 
 #### Example
 > | Category               | Dev tools | Aragon apps | User experience  | XYZ |
@@ -22,17 +22,17 @@ Note: categories can be invented as needed by the applicant team.
 
 ### Initiatives
 
-*In this section are provided all the concrete elements the applicant team is planning to work on. These should be listed as initiatives by order of priority.*
+*In this section, the applicant team should detail in concrete terms the different initiatives it is planning to work on. They should be listed by order of priority.*
 
-For each initiative, in order to justify it is relevant please detail shortly:
-- **Value proposition** - *How it will provide value to the end user (i.e. developer or end user)*
-- **Deliverables** - *What precisely will be implemented in regard of this initiative*
-- **Background** - *A link to a Github issue, a Flock roadmap item, a Nest proposal, user feedback, or any material backing its relevancy*
-- **Long-term vision for initiative** - *This last item is optional*
+For each initiative, the applicant team should cover the following items:
+- **Value proposition** - *How it will provide value to the end user (i.e. developer or Aragon DAO user)*
+- **Deliverables** - *What precisely will be implemented in to fulfill this initiative*
+- **Background** - *A link to a Github issue, Flock roadmap item, Nest proposal, user feedback, or any other material backing the initiative's relevancy*
+- **Long-term vision for initiative** - *This last item is optional and can provide more insights on future developments built on top of the initiative*
 
 #### Example
 
-*Here is an example of initiative inspired from a past Flock proposal*
+*Here is an example of initiative inspired from a past Flock application*
 
 > ### I01 - Fundraising
 > #### Value proposition
@@ -51,11 +51,14 @@ For each initiative, in order to justify it is relevant please detail shortly:
 
 ## 3. Grant Size
 
-*Your estimated operating cost for successfully building the Aragon Project  and the estimated ANT package that you would need to incentivize the team long term commitment*
+*Your estimated operating cost for successfully building the Aragon Project and the estimated ANT package that you would be needed to incentivize the team's long term commitment*
 
-*Regarding the ANT package please be sure to provide the number of ANT per team member per year.*
+*Regarding the ANT package please be sure to provide an amount per team member per year.*
 
 #### Example
+
+*Here is an example of initiative inspired from a past Flock application*
+
 
 > ### Estimated operating costs for Q2 and Q3 2019
 >
@@ -77,7 +80,7 @@ For each initiative, in order to justify it is relevant please detail shortly:
 
 ## 4. Team
 
-*This is the basic structure you should follow when creating your proposal where you briefly describe of the current team members and their relevancy for the role with links to their relevant social media channels (github, twitter, etc) and provide info of future openings if you plan to hire more people during the year.*
+*Below is the basic structure the applicant team should follow when creating a Flock proposal. It includes a brief description the current team members and their relevancy for the role, with links to relevant materials (github, twitter, projects, etc) and provides info on future openings if the applicant team plans to hire more people during their Flock mandate.*
 
 #### AraEagles Example Team
 
@@ -103,7 +106,7 @@ For each initiative, in order to justify it is relevant please detail shortly:
 
 *List of aragon accounts, channels, tools, assets, domains and infrastructure that you need in order to operate*
 
-| Access to                                                                        | Yes/No | If Yes,  precise requirement |
+| Access to                                                                        | Yes/No | If Yes, precise why          |
 |----------------------------------------------------------------------------------|--------|------------------------------|
 | Blog access  on blog.aragon.org                                                  |        |                              |
 | Social media access                                                              |        |                              |
@@ -117,4 +120,4 @@ For each initiative, in order to justify it is relevant please detail shortly:
 
 ## 6. Organization structure  
 
-*Under What type of organization, if any, is the team organized*
+*Under what type of organization, if any, is the team organized*
