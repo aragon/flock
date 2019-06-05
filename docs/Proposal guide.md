@@ -51,7 +51,7 @@ For each initiative, the applicant team should cover the following items:
 
 ## 3. Grant Size
 
-*Your estimated operating cost for successfully building the Aragon Project and the estimated ANT package that you would be needed to incentivize the team's long term commitment*
+*Your estimated operating cost for successfully building the Aragon Project and the estimated ANT package that would be needed to incentivize the team's long term commitment*
 
 *Regarding the ANT package please be sure to provide an amount per team member per year.*
 
