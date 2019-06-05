@@ -10,7 +10,7 @@
 ### Working in the Aragon Community
 *In this part the applicant team should qualitatively explain why it is qualified to deliver the strategy outlined in the previous section.*
 
-*Members of the Aragon community are united through their alignment with the [Aragon Manifesto](https://blog.aragon.org/the-aragon-manifesto-4a21212eac03/) and the values of openness, freedom and goodwill. While there are no requirements to refer to the above explicitly, teams are encourage to speak from their heart, technicals are not the only thing!*
+*Members of the Aragon community are united around the [Aragon Manifesto](https://blog.aragon.org/the-aragon-manifesto-4a21212eac03/) and values of openness, freedom and goodwill. While there are no requirements to refer to the above explicitly, teams are encourage to speak from their heart, technicals are not the only thing!*
 
 ## 2. Deliverables
 
