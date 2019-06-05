@@ -2,10 +2,15 @@
 
 ## 1. Summary
 
-*This section should detail the high level strategy of the proposal in simple terms. It can be accompanied by a few references from past team achievements.*
+### Strategy
+*This section should detail the high level strategy and rational behind the proposal in simple terms. It can be accompanied by a few short references to past team achievements.*
 
 *In case the applicant team is an ongoing Flock team it can join the previously achieved roadmap and its most recent community reports.*
 
+### Working in the Aragon Community
+*In this part the applicant team should qualitatively explain why it is qualified to deliver the strategy outlined in the previous section.*
+
+*Members of the Aragon community are united through their alignment with the [Aragon Manifesto](https://blog.aragon.org/the-aragon-manifesto-4a21212eac03/) and the values of openness, freedom and goodwill. While there are no requirements to refer to the above explicitly, teams are encourage to speak from their heart, technicals are not the only thing!*
 
 ## 2. Deliverables
 
@@ -32,7 +37,7 @@ For each initiative, the applicant team should cover the following items:
 
 #### Example
 
-*Here is an example of initiative inspired from a past Flock application*
+*Here is an example of initiative inspired from a past Flock application.*
 
 > ### I01 - Fundraising
 > #### Value proposition
@@ -51,13 +56,13 @@ For each initiative, the applicant team should cover the following items:
 
 ## 3. Grant Size
 
-*Your estimated operating cost for successfully building the Aragon Project and the estimated ANT package that would be needed to incentivize the team's long term commitment*
+*Your estimated operating cost for successfully building the Aragon Project and the estimated ANT package that would be needed to incentivize the team's long term commitment.*
 
 *Regarding the ANT package please be sure to provide an amount per team member per year.*
 
 #### Example
 
-*Here is an example of initiative inspired from a past Flock application*
+*Here is an example of initiative inspired from a past Flock application.*
 
 
 > ### Estimated operating costs for Q2 and Q3 2019
@@ -80,7 +85,7 @@ For each initiative, the applicant team should cover the following items:
 
 ## 4. Team
 
-*Below is the basic structure the applicant team should follow when creating a Flock proposal. It includes a brief description the current team members and their relevancy for the role, with links to relevant materials (github, twitter, projects, etc) and provides info on future openings if the applicant team plans to hire more people during their Flock mandate.*
+*Below is the basic structure the applicant team should follow when creating a Flock proposal. It includes a brief description the current team members and their relevancy for the role, with links to relevant materials (github, twitter, projects, etc.) and provides info on future openings if the applicant team plans to hire more people during their Flock mandate.*
 
 #### AraEagles Example Team
 
@@ -108,10 +113,10 @@ For each initiative, the applicant team should cover the following items:
 
 | Access to                                                                        | Yes/No | If Yes, precise what and why |
 |----------------------------------------------------------------------------------|--------|------------------------------|
-| Blog accesses:                                                                   |        |                              |
-| Social media accesses:                                                           |        |                              |
-| Website accesses:                                                                |        |                              |
-| Repo accesses:                                                                   |        |                              |
+| Blog accesses                                                                    |        |                              |
+| Social media accesses                                                            |        |                              |
+| Website accesses                                                                 |        |                              |
+| Repo accesses                                                                    |        |                              |
 | Unrestricted use of  the Aragon trademark                                        |        |                              |
 | Publish access  to aragonpm.eth                                                  |        |                              |
 | Access to Aragon servers  and cloud infrastructure                               |        |                              |
@@ -120,4 +125,10 @@ For each initiative, the applicant team should cover the following items:
 
 ## 6. Organization structure  
 
-*Under what type of organization, if any, is the team organized*
+*Under what type of organization, if any, is the team organized.*
+
+## 7. Due diligence materials
+
+*In an organized fashion, the applicant team is invited to provide links to materials that can support its Flock application.*
+
+*These can be links to projects, references, or any material judged relevant.*
