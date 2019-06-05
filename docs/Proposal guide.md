@@ -129,6 +129,6 @@ For each initiative, the applicant team should cover the following items:
 
 ## 7. Due diligence materials
 
-*In an organized fashion, the applicant team is invited to provide links to materials that can support its Flock application.*
+*In a structured way, the applicant team is invited to provide links to materials that can support its Flock application.*
 
 *These can be links to projects, references, or any material judged relevant.*
