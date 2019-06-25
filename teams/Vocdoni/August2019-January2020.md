@@ -8,7 +8,7 @@ We intend the algorithms, systems, and software that we build to be a useful con
 In concrete terms, our intent is to apply our research so that Aragon DAOs and other organizations can conduct voting processes that provably account for particular properties of their participants (age, location, or membership for example) - without revealing this data in the course of voting. 
 
 # Technology Overview
-A Vocdoni voting process makes use of the following components:
+A Vocdoni voting process makes use of the following components, as visualized below: 
 ![Architecture](images/architecture-main.svg "Architecture Overview")
 Data integrity is provided by the public blockchain Ethereum main net.
 Data availability is provided by a distributed filesystem such as Swarm or IPFS.
@@ -26,9 +26,9 @@ ZK-Snark is an extremely fast and private method for proving the validity of a v
 
 The user then submits the LRS- or ZK-Snark verified vote to a Gateway, which using PSS forwards it to a Relay. 
 
-When a relay receives a vote package, it first validates the external payload and then groups it with other vote packages. Once enough votes are ready, it pins the vote data to swarm and then registers the batch to the blockchain. 
+When a relay receives a vote package, it first validates the external payload and then groups it with other vote packages. Once enough votes are ready, the relay pins the block of verified votes to an ephemeral blockchain.
 
-After a process ends, the organizer publishes a private key to decrypt the submitted vote packages. From this moment, any node on the network can start counting and validating votes.
+After a process ends, the organizer publishes a private key to decrypt the submitted vote packages. From this moment, any node on the network can start counting and validating votes. Each vote package pertaining to that process is retrieved from the ephemeral blockchain and tallied, and then a final result is pinned to the Ethereum main net. The ephemeral blockchain is *never* deleted unless the official vote result on Ethereum matches the consensus of the ephemeral blockchain nodes. 
 
 
 # Deliverables
