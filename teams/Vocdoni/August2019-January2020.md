@@ -8,6 +8,27 @@ We intend the algorithms, systems, and software that we build to be a useful con
 In concrete terms, our intent is to apply our research so that Aragon DAOs and other organizations can conduct voting processes that provably account for particular properties of their participants (age, location, or membership for example) - without revealing this data in the course of voting. 
 
 # Technology Overview
+A Vocdoni voting process makes use of the following components:
+![Architecture](images/architecture-main.svg "Architecture Overview")
+Data integrity is provided by the public blockchain Ethereum main net.
+Data availability is provided by a distributed filesystem such as Swarm or IPFS.
+Peer messaging is provided by the distributed messaging protocol Swarm/PSS.
+The client interface (app or webapp) interacts with the P2P network and the Blockchain through Gateways (using WebSockets or HTTP/RPC).
+Gateways are neutral/agnostic, since the cryptographic layer happens on the peer side. The only intent of a Gateway is about forwarding requests from clients that can't open a socket by themselves (typically web browsers).
+
+Before starting a voting process, the organizer collects a census of all valid voters and then publishes a Merkle tree of all public keys that are eligible to vote. 
+The process metadata, as well as the census Merkle tree, is pinned on a decentralized filesystem. A transaction is sent to the blockchain to persist the vote details. 
+
+Now that the process has begun, users can vote. In order to ensure complete voter anonymity, each user packages their vote using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark). 
+LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated by all other members of the group without revealing the identity of the signer. Each signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. 
+
+ZK-Snark is an extremely fast and private method for proving the validity of a voter. The method allows a user to convince a verifier that it possesses a valid vote and belongs in the census without revealing any information about the voter or the vote itself. 
+
+The user then submits the LRS- or ZK-Snark verified vote to a Gateway, which using PSS forwards it to a Relay. 
+
+When a relay receives a vote package, it first validates the external payload and then groups it with other vote packages. Once enough votes are ready, it pins the vote data to swarm and then registers the batch to the blockchain. 
+
+After a process ends, the organizer publishes a private key to decrypt the submitted vote packages. From this moment, any node on the network can start counting and validating votes.
 
 
 # Deliverables
