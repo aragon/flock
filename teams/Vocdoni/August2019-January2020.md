@@ -1,42 +1,43 @@
 # Summary
-Vocdoni is a global project that builds tools for anonymous, censorship resistant and end-to-end verifiable voting. To this end, we are requesting Aragon Flock funding in order to produce a production-ready suite of backend components and client libraries. This proposal is for six months' funding, and is being submitted for consideration as part of AGP 3, to be held 25-27 July, 2019. As such, the timeline runs from August 2019 to January 2020.
+Vocdoni is a global project that builds tools for anonymous, censorship resistant and end-to-end verifiable voting. To this end, we are requesting Aragon Flock funding in order to produce a production-ready suite of backend components and client libraries, alongside an Aragon module to integrate these capabilities. This proposal is for six months' funding, and is being submitted for consideration as part of AGP 3, to be held 25-27 July, 2019. As such, the timeline runs from August 2019 to January 2020.
 
 Our aim is a trustless voting system, where anyone can speak their voice and where everything can be audited. We are engineering building blocks for a permissionless, private and censorship resistant democracy and we belive that our outputs will be extremely valuable to the Aragon ecosystem. 
 
 We intend the algorithms, systems, and software that we build to be a useful contribution toward making "violence in these cryptonetworks impossible by protecting users' privacy with cryptography." In particular, our aim is to provide the necessary tooling for the political will of network participants to translate outwardly into real political capital, without sacrificing privacy.
 
-In concrete terms, our intent is to apply our research so that Aragon DAOs and other organizations can conduct voting processes that provably account for particular properties of their participants (age, location, or membership for example) - without revealing this data in the course of voting.
+In concrete terms, our intent is to apply our research so that Aragon DAOs and other organizations can conduct voting processes that provably account for particular properties of their participants (age, location, or membership for example) - without revealing this data in the course of voting. 
 
 # Technology Overview
 
 
 # Deliverables
 
-## I01 - Services
+## I01 - Entity Services
 The goal of this work package is to create all of the services and supporting infrastructure necessary for organizations to conduct and scale voting processes.
 
 ### Components
-#### Census Service
-Application and API allowing organizations of all types to create and manage collections of user public keys. Census maintainers can set their own criteria for the inclusion of keys in any particular census.
-#### Process Service
-Application and API for organizations to create and manage voting processes. Gives vote organizers a simple way to formulate ballots and launch on-chain voting processes.
+#### Entity Manager
+Application and API allowing organizations of all types to manage collections of user public keys and create voting processes. Census maintainers can set their own criteria for the inclusion of keys in any particular census.
 #### L2 Suite
 Tool suite enabling easy, secure deployment of supporting L2 infrastructure. The purpose of this supporting infrastructure is to  offload computation and coordination effort from the EVM, thereby improving performance and reducing cost. This can be done is such a way that there is no loss of data integrity. Gives stakeholder organizations a way to deploy and scale gateways and relay nodes that coordinate activity accross themselves, mobile users, the blockchain, and content-addressable storage.
+#### Aragon Module
+Aragon module integrating the capabilities of the Entity Manager and interaction with L2 Suite components in a modular and reusable way, offering any Aragon DAO the ability to easily integrate cost-effective verifiable voting.
 
 ### Roadmap
 ##### August
-* Alpha release of census service. User feedback and testing with stakeholder organizations.
+* Alpha release of entity mangaer. User feedback and testing with stakeholder organizations.
 ##### September
-* Alpha release of process service. Process testing and scalability evaluation.
-##### October
 * Alpha release of L2 Suite. Burn-in testing and performance optimaization.
+##### October
+* Alpha release of Aragon module. Process testing and scalability evaluation.
 ##### November
-* Beta release of census and process service. Feature complete and refined user flows.
+* Beta release of entity manager. Feature complete and refined user flows.
 ##### December
-* Beta Release of L2 Suite. Large-scale testing and failure-mode evaluation. Secure, high-availability packaging and release pipeline.
+* Beta release of L2 Suite. Large-scale testing and failure-mode evaluation. Secure, high-availability packaging and release pipeline.
 * Begin comprehensive security audit. 
+* Beta release of Aragon module.
 ##### January
-* Complete external security audit of all components. Break-fix and user-requested enhancements.
+* Finish external security audit of all components. Break-fix and user-requested enhancements.
 * Wide release
 
 
@@ -47,10 +48,10 @@ The goal of this work package is to create client applications for participating
 ### Components
 #### Petition App
 Mobile client application allowing users to digitally sign petitions.
-#### LRS App
-Mobile client application enabling users to cast anonymous votes using Linkable Ring Signatures.
-#### Snark App
-Mobile client application enabling users to cast anonymous votes using Zero-knowledge proofs.
+#### Voting App
+Mobile client application enabling users to cast anonymous votes using Linkable Ring Signatures and/or Zero-knowledge proofs.
+#### Aragon App
+Aragon module enabling client-side verified voting capabilities.
 
 ### Roadmap
 ##### August
@@ -58,14 +59,16 @@ Mobile client application enabling users to cast anonymous votes using Zero-know
 ##### September
 * Beta release of petition app. Feature complete and polished.
 ##### October
-* Alpha release of LRS app. Feeback on vote UI.
+* Alpha release of voting app, with LRS voting. Feeback on vote UI.
 ##### November
-* Alpha release of Snark app. Testing and tuning of voting performance.
+* Alpha release of Aragon app. 
+* Testing and tuning of voting performance.
+* Beta release of Voting app. Testing at scale.
 ##### December
-* Beta release of LRS and Snark apps. Testing at scale.
+* Beta release of Aragon app.
 * Begin comprehensive security audit.
 ##### January
-* Complete external security audit of all components. Break-fix and user-requested enhancements. 
+* Finish external security audit of all components. Break-fix and user-requested enhancements. 
 
 
 
@@ -81,7 +84,7 @@ Mobile client application enabling users to cast anonymous votes using Zero-know
 ⋅⋅⋅ 25,000.00 - outreach
 
 ## ANT Package
-* 20,000.00 ANT per team member, with a four year vesting structure.
+* 20,000.00 ANT per team member, for a total of 100,000 ANT, with a one year cliff and four year vesting structure. 
 
 ## Structure
 Our team is primarily located in and around Barcelona, with one member in Berlin. Our workflows are remote-first and conducted in English.
