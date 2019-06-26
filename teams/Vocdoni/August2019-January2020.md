@@ -118,7 +118,7 @@ Xavi Vives is a maker. He has worked as a software engineer for most of his prof
 ## Jordi Moraleda
 Jordi Moraleda is a computer scientist, musician, culture and freedom lover. He holds a Bachelor's in Computer Engineering, and a Masters in Marketing. He began his career with multinationals including Indra and IBM, before he took a step back and started to invest into entrepreneurial projects. This led him to co-found a tech startup and a digital agency, alongside freelance projects and vocational endeavours involving independent music bands, recording studios, and political organizations. As a computer engineer he is currently focused on full-stack development, software architecture, UI/UX, and decentralized platforms that can make a change.
 
-## Jordi Painan
+## Jordi Pinyana
 Jordi Pinyana is a student of computer engineering. He has focused his professional career on projects that can help solve global problems. He co-created a smartphone app that detected attention deficit disorders in infants through an interactive reading game. He started in the crypto world in 2014 and has been dedicated to it full time since 2016. He has worked on blockchain solutions for several multinational firms and lectures about Parity/Ethereum at the Polytechnic University of Catalonia blockchain masters program, as well as various bootcamps. He firmly believes that through decentralization, which starts with participation, many of the problems that have always worried him could be solved.
 
 ## Isaac Wilder
