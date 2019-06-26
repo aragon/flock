@@ -14,7 +14,7 @@ The focus of the program is the selection of independent teams that will work on
 - An incentivization package in ANT
 
 ## Application process
-The application process is open and public and it will take place in this dedicated GitHub repository. If you expect your proposal to be approved in the next Aragon Network Vote you should submit your proposal to the Flock program at least one month before Aragon Governance Proposals are due, to give reviewers enough time to properly consider your proposal. You can find information about dates for the next Aragon Network Vote on the [Governance page](https://wiki.aragon.org/documentation/governance/) in the Aragon Wiki.
+The application process is open and public and it will take place in this dedicated GitHub repository. **If you expect your proposal to be approved in the next Aragon Network Vote you should submit your proposal to the Flock program at least one month before Aragon Governance Proposals are due**, to give reviewers enough time to properly consider your proposal. You can find information about dates for the next Aragon Network Vote on the [Governance page](https://wiki.aragon.org/documentation/governance/) in the Aragon Wiki.
 
 **How to submit your proposal**
 - Fork the Aragon Flock GitHub repository
