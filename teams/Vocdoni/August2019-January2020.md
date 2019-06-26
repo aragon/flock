@@ -16,7 +16,7 @@ The client interface (app or webapp) interacts with the P2P network and the Bloc
 Before starting a voting process, the process organizer collects a census containing the public keys of all eligible voters and then publishes a Merkle tree of these keys. 
 The process metadata, as well as the census Merkle tree, is pinned on a decentralized filesystem. A transaction is sent to the blockchain to persist the vote details. 
 
-Now that the process has begun, users can vote. In order to ensure complete voter anonymity, each user packages their vote using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark). 
+Once the process has begun, users can vote. In order to achieve voter anonymity, each user packages their vote using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark). 
 
 LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated without revealing the identity of the signer. This signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. 
 
