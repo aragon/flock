@@ -1,4 +1,5 @@
-**Introductory note**: This guide can be used by Flock program applicants to draft their ideal application. However, the structure and content of the proposal can be adapted as much as necessary by the applicant team. Above all, applications should be **clear and concise**.
+#### Introductory note
+This guide can be used by Flock program applicants in order to draft their ideal proposal. However, the structure and content of the proposal can be adapted as much as necessary by the applicant team. Above all, applications should be **clear and concise**.
 
 Don't forget to share the proposal as early as possible with the [community](https://forum.aragon.org/).
 
