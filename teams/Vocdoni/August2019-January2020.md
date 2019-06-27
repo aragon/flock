@@ -1,7 +1,7 @@
 # Summary
 Vocdoni is a global project that builds tools for anonymous, censorship resistant and end-to-end verifiable voting. To this end, we are requesting Aragon Flock funding in order to produce a production-ready suite of backend components and client libraries, alongside an Aragon module to integrate these capabilities. This proposal is for six months' funding, and is being submitted for consideration as part of AGP 3, to be held 25-27 July, 2019. As such, the timeline runs from August 2019 to January 2020.
 
-Our aim is a trustless voting system, where anyone can speak their voice and where everything can be audited. We are engineering building blocks for a permissionless, private and censorship resistant democracy and we belive that our outputs will be extremely valuable to the Aragon ecosystem. 
+Our aim is a trustless voting system, where anyone can speak their voice and where everything can be audited. We are engineering building blocks for a permissionless, private and censorship resistant democracy and we believe that our outputs will be extremely valuable to the Aragon ecosystem. 
 
 We intend the algorithms, systems, and software that we build to be a useful contribution toward making "violence in these cryptonetworks impossible by protecting users' privacy with cryptography." In particular, our aim is to provide the necessary tooling for the political will of network participants to translate outwardly into real political capital, without sacrificing privacy.
 
@@ -10,43 +10,43 @@ In concrete terms, our intent is to apply our research so that Aragon DAOs and o
 # Technology Overview
 A Vocdoni voting process makes use of the following components, as visualized below: 
 ![Architecture](images/architecture-main.svg "Architecture Overview")
-Data integrity is provided by Ethereum mainnet, data availability is provided by IPFS, and p2p messaging is implemented using the distributed messaging protocol Swarm/PSS.
-The client interface (app or webapp) interacts with the P2P network and the Blockchain through Gateways (using WebSockets or HTTP/RPC). These gateways forward (encrypted) requests from light clients to the relay network.
+Data integrity is provided by Ethereum Mainnet, data availability is provided by IPFS, and p2p messaging is implemented using the distributed messaging protocol Swarm/PSS.
+The client interface (app or web app) interacts with the P2P network and the Blockchain through Gateways (using WebSockets or HTTP/RPC). These gateways forward (encrypted) requests from light clients to the relay network.
 
 Before starting a voting process, the process organizer collects a census containing the public keys of all eligible voters and then publishes a Merkle tree of these keys. 
-The process metadata, as well as the census Merkle tree, is pinned on a decentralized filesystem. A transaction is sent to the blockchain to persist the vote details. 
+The census Merkle tree is pinned on a decentralized filesystem and the process metadata (including the Merkle root of the census) is published on the blockchain.
 
 Once the process has begun, users can vote. In order to achieve voter anonymity, each user packages their vote using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark). 
 
 LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated without revealing the identity of the signer. This signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. 
 
-Alternatively, a ZK-Snark based process is an easily verifiable method for proving the validity of a voter, but is comparatively costly to produce. This method allows a user to convince a verifier that it possesses a valid vote and belongs in the census without revealing any information about the voter or the vote itself. 
+Alternatively, a ZK-Snark based process is an easily verifiable method for proving the validity of a voter, but is comparatively costly to produce. This method allows a user to convince a verifier that it belongs in the census at it has not voted twice without revealing any information about the voter or the vote itself.
 
-The user then submits the LRS- or ZK-Snark verified vote to a Gateway, which using PSS forwards it to a Relay. 
+The user then submits the LRS- or ZK-Snark vote to a Gateway, which forwards it to a Relay via PSS. 
 
-When a relay receives a vote package, it first validates the external payload and then groups it with other vote packages. Once enough votes are ready, the relay pins the block of verified votes to an ephemeral blockchain.
+When a relay receives a vote package, it first validates the external payload and then groups it with other vote packages. Once enough votes are ready, the relay pins the block of verified votes to the blockchain.
 
-After a process ends, the organizer publishes a private key to decrypt the submitted vote packages. From this moment on, any node on the network can start counting and validating votes. Each vote package is retrieved from the ephemeral blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
+After a process ends, the organizer publishes a private key to decrypt the submitted vote packages. From this moment on, any node on the network can start counting and validating votes. Each vote package is retrieved from the blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
 
 
 # Deliverables
 
-## I01 - Entity Services
+## I01 - Entity Components
 The goal of this work package is to create all of the services and supporting infrastructure necessary for organizations to conduct and scale voting processes.
 
 ### Components
 #### Entity Manager
-Application and API allowing organizations of all types to manage collections of user public keys and create voting processes. Census maintainers can set their own criteria for the inclusion of keys in any particular census.
+Application and API allowing organizations to manage collections of user public keys and create voting processes. Census maintainers can set their own criteria for the inclusion of keys in any particular census.
 #### L2 Suite
-Tool suite enabling easy, secure deployment of supporting L2 infrastructure. The purpose of this supporting infrastructure is to  offload computation and coordination effort from the EVM, thereby improving performance and reducing cost. This can be done is such a way that there is no loss of data integrity. Gives stakeholder organizations a way to deploy and scale gateways and relay nodes that coordinate activity accross themselves, mobile users, the blockchain, and content-addressable storage.
+Tool suite enabling easy, secure deployment of supporting L2 infrastructure. The purpose of this supporting infrastructure is to  offload computation and coordination effort from the EVM, thereby improving performance and reducing cost. This can be done in such a way that there is no loss of data integrity. Gives stakeholder organizations a way to deploy and scale gateways and relay nodes that coordinate activity across themselves, mobile users, the blockchain, and content-addressable storage.
 #### Aragon Module
 Aragon module integrating the capabilities of the Entity Manager and interaction with L2 Suite components in a modular and reusable way, offering any Aragon DAO the ability to easily integrate cost-effective verifiable voting.
 
 ### Roadmap
 ##### August
-* Alpha release of entity mangaer. User feedback and testing with stakeholder organizations.
+* Alpha release of entity manager. User feedback and testing with stakeholder organizations.
 ##### September
-* Alpha release of L2 Suite. Burn-in testing and performance optimaization.
+* Alpha release of L2 Suite. Burn-in testing and performance optimization.
 ##### October
 * Alpha release of Aragon module. Process testing and scalability evaluation.
 ##### November
@@ -61,28 +61,30 @@ Aragon module integrating the capabilities of the Entity Manager and interaction
 
 
 
-## I02 - Client Libraries
-The goal of this work package is to create client applications for participating in voting processes.
+## I02 - Client Componenets
+The goal of this work package is to create client reference applications for participating in voting processes.
 
 ### Components
-#### Petition App
-Mobile client application allowing users to digitally sign petitions.
-#### Voting App
-Mobile client application enabling users to cast anonymous votes using Linkable Ring Signatures and/or Zero-knowledge proofs.
-#### Aragon App
-Aragon module enabling client-side verified voting capabilities.
+#### Client Libraries 
+Client libraries allow for computing the LRS as well as the ZK-Snarks proof on a mobile device or on a web browser.
+
+They also include the necessary functionality to interact with the gateways end-points in order to fetch any necessary data from the blockchain, distributed storage systems, as well as sending the vote packages.
+#### Aragon App reference implementation
+This reference app will showcase the usage of the voting capabilities.
+
+It will allow users to cast anonymous votes using Linkable Ring Signatures and/or Zero-knowledge proofs.
+Additionally, it will allow users to digitally sign petitions, using the same infrastructure used by voting.
 
 ### Roadmap
-##### August
-* Alpha release of petition app. User feedback and refinement of overall experience.
 ##### September
-* Beta release of petition app. Feature complete and polished.
+* Alpha release of petition libraries and infrastructure testing
 ##### October
-* Alpha release of voting app, with LRS voting. Feeback on vote UI.
+* Alpha release of voting libraries, with LRS voting.
+* Testing and tuning of voting performance.
 ##### November
 * Alpha release of Aragon app. 
-* Testing and tuning of voting performance.
-* Beta release of Voting app. Testing at scale.
+* Extensive feeback on Vote UX.
+* Beta release of libraries. Testing at scale.
 ##### December
 * Beta release of Aragon app.
 * Begin comprehensive security audit.
