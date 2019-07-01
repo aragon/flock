@@ -1,7 +1,7 @@
 # Summary
 Vocdoni is a global project that builds tools for anonymous, censorship resistant and end-to-end verifiable voting. To this end, we are requesting Aragon Flock funding in order to produce a production-ready suite of backend components and client libraries, alongside an Aragon module to integrate these capabilities. This proposal is for six months' funding, and is being submitted for consideration as part of AGP 3, to be held 25-27 July, 2019. As such, the timeline runs from August 2019 to January 2020.
 
-Our aim is a trustless voting system, where anyone can speak their voice and where everything can be audited. We are engineering building blocks for a permissionless, private and censorship resistant democracy and we believe that our outputs will be extremely valuable to the Aragon ecosystem. 
+Our aim is a trustless voting system, where anyone can speak their voice and where everything can be audited. We are engineering building blocks for a permissionless, private and censorship resistant democracy and we believe that our outputs will be extremely valuable to the Aragon ecosystem. In particular, this proposal speaks directly to the 'Vote Relay Protocol' element of the Aragon Network roadmap. It also lays the groundwork for future enhancements to Aragon's voting system.
 
 We intend the algorithms, systems, and software that we build to be a useful contribution toward making "violence in these cryptonetworks impossible by protecting users' privacy with cryptography." In particular, our aim is to provide the necessary tooling for the political will of network participants to translate outwardly into real political capital, without sacrificing privacy.
 
@@ -20,7 +20,7 @@ Once the process has begun, users can vote. In order to satisfy uniqueness and a
 
 LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated without revealing the identity of the signer. This signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. Alternatively, a ZK-Snark proof is an easy-to-verify method for proving the eligibility of a voter without revealing their identity, but is comparatively costly to produce. Either method allows a user to convince a verifier that it belongs in the census and it has not voted twice, without revealing any information about the voter or the vote itself.
 
-The user then submits their ballot to a Gateway, which forwards it to a Relay via PSS. Relays are responsible for validating the evelope, and storing cast ballots. They leverage Tendermint to achieve fault-tolerant consensus, and construct a blockchain to store the votes. 
+The user then submits their ballot to a Gateway, which forwards it to a Relay via PSS. Relays are responsible for validating the envelope, and storing cast ballots. They leverage Tendermint to achieve fault-tolerant consensus, and construct a blockchain to store the votes. This allows for integration with public blockchains via tools such as Cosmos and/or Polkadot, and thereby for binding smart contracts to vote outcomes.
 
 After a process ends, the organizer publishes a private key to decrypt the actual votes. From this moment on, any node on the network can start validating and counting ballots. Each vote package is retrieved from the blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
 
