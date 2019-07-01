@@ -11,22 +11,20 @@ In concrete terms, our intent is to apply our research so that Aragon DAOs and o
 A Vocdoni voting process makes use of the following components, as visualized below: 
 ![Architecture](images/architecture-main.svg "Architecture Overview")
 Data integrity is provided by Ethereum Mainnet, data availability is provided by IPFS, and p2p messaging is implemented using the distributed messaging protocol Swarm/PSS.
-The client interface (app or web app) interacts with the P2P network and the Blockchain through Gateways (using WebSockets or HTTP/RPC). These gateways forward (encrypted) requests from light clients to the relay network.
+The client interface (app or web app) interacts with the P2P network and the Blockchain through Gateways (using WebSockets or HTTP/RPC). 
 
-Before starting a voting process, the process organizer collects a census containing the public keys of all eligible voters and then publishes a Merkle tree of these keys. 
-The census Merkle tree is pinned on a decentralized filesystem and the process metadata (including the Merkle root of the census) is published on the blockchain.
+Before starting a voting process, the process organizer collects a census containing the public keys of all eligible voters and then publishes a Merkle tree of these keys.
+ The census Merkle tree is pinned on a decentralized filesystem and the process metadata (including the Merkle root of the census) is published on the blockchain.
 
-Once the process has begun, users can vote. In order to achieve voter anonymity, each user packages their vote using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark). 
+Once the process has begun, users can vote. In order to satisfy uniqueness and anonymity requirements, each user wraps their ballot in an envelope using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark).
 
-LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated without revealing the identity of the signer. This signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. 
+LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated without revealing the identity of the signer. This signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. Alternatively, a ZK-Snark proof is an easy-to-verify method for proving the eligibility of a voter without revealing their identity, but is comparatively costly to produce. Either method allows a user to convince a verifier that it belongs in the census and it has not voted twice, without revealing any information about the voter or the vote itself.
 
-Alternatively, a ZK-Snark based process is an easily verifiable method for proving the validity of a voter, but is comparatively costly to produce. This method allows a user to convince a verifier that it belongs in the census at it has not voted twice without revealing any information about the voter or the vote itself.
+The user then submits their ballot to a Gateway, which forwards it to a Relay via PSS. Relays are responsible for validating the evelope, and storing cast ballots. They leverage Tendermint to achieve fault-tolerant consensus, and construct a blockchain to store the votes. 
 
-The user then submits the LRS- or ZK-Snark vote to a Gateway, which forwards it to a Relay via PSS. 
+After a process ends, the organizer publishes a private key to decrypt the actual votes. From this moment on, any node on the network can start validating and counting ballots. Each vote package is retrieved from the blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
 
-When a relay receives a vote package, it first validates the external payload and then groups it with other vote packages. Once enough votes are ready, the relay pins the block of verified votes to the blockchain.
-
-After a process ends, the organizer publishes a private key to decrypt the submitted vote packages. From this moment on, any node on the network can start counting and validating votes. Each vote package is retrieved from the blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
+For a more details on the architecture, protocols, and components of Vocdoni, please see [our documentation](https://vocdoni.io/docs/#/architecture/general).
 
 
 # Deliverables
