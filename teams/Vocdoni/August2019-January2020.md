@@ -13,16 +13,15 @@ A Vocdoni voting process makes use of the following components, as visualized be
 Data integrity is provided by Ethereum Mainnet, data availability is provided by IPFS, and p2p messaging is implemented using the distributed messaging protocol Swarm/PSS.
 The client interface (app or web app) interacts with the P2P network and the Blockchain through Gateways (using WebSockets or HTTP/RPC). 
 
-Before starting a voting process, the process organizer collects a census containing the public keys of all eligible voters and then publishes a Merkle tree of these keys.
- The census Merkle tree is pinned on a decentralized filesystem and the process metadata (including the Merkle root of the census) is published on the blockchain.
+Before starting a voting process, the process organizers collect public keys for all eligible voters. To begin a new process, the organizers derive a single-use public key for each voter based on a process nonce and the original public key. These single-use keys are organized into a Merkle tree (and grouped, if the process will use Linkable Ring Signatures). This data, referred to as a census, is pinned on a decentralized filesystem and the process metadata (including the Merkle root of the census, and a process public key) is published on the blockchain.
 
 Once the process has begun, users can vote. In order to satisfy uniqueness and anonymity requirements, each user wraps their ballot in an envelope using either a Linkable Ring Signature (LRS) or a Zero-Knowledge Proof (ZK-Snark).
 
 LRS allows each individual in a group of users (in this case a chunk of the census) to compute a ring signature which can be validated without revealing the identity of the signer. This signature can be verified as belonging to a valid signer, but that signer's identity is unknown other than their membership in a census chunk. Alternatively, a ZK-Snark proof is an easy-to-verify method for proving the eligibility of a voter without revealing their identity, but is comparatively costly to produce. Either method allows a user to convince a verifier that it belongs in the census and it has not voted twice, without revealing any information about the voter or the vote itself.
 
-The user then submits their ballot to a Gateway, which forwards it to a Relay via PSS. Relays are responsible for validating the envelope, and storing cast ballots. They leverage Tendermint to achieve fault-tolerant consensus, and construct a blockchain to store the votes. This allows for integration with public blockchains via tools such as Cosmos and/or Polkadot, and thereby for binding smart contracts to vote outcomes.
+A custom Tendermint blockchain is responsible for validating the vote envelope, and for storing and accounting cast ballots. This is referred to at the Voting Chain. The user can submit their ballot to any fullnode on the Voting Chain network, which will broadcast it to the mempool for validation and inclusion. This approach allows for integration with public blockchains via Polkadot, and thereby for binding smart contracts to vote outcomes.
 
-After a process ends, the organizer publishes a private key to decrypt the actual votes. From this moment on, any node on the network can start validating and counting ballots. Each vote package is retrieved from the blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
+After a process ends, the organizers publish the process private key to decrypt the actual votes. From this moment on, any node on the network can start validating and counting ballots. Each vote package is retrieved from the blockchain and tallied, and then a final result is sent to the Ethereum mainnet.
 
 For a more details on the architecture, protocols, and components of Vocdoni, please see [our documentation](https://vocdoni.io/docs/#/architecture/general).
 
