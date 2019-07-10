@@ -35,7 +35,7 @@ Part of the funding is intended to cover the annual operating cost of each team.
 
 To align the interests of the teams with the creation of value of the Aragon Network, increase the team motivation and incentivize long term commitment, every team will be given an incentivization package in ANT. This incentivization package gives the team governance power over the project and the potential for greater financial upside. This incentive will be subject to vesting.
 
-After the definitive approval of funding as per the AGP-1 process, funds for operating costs will be disbursed to the approved teams in a lump sum.
+After the definitive approval of funding as per the AGP-1 process, funds for operating costs will be disbursed to the approved teams in a lump sum or in tranches.
 
 ## Decision rationale
 
