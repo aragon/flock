@@ -14,12 +14,12 @@ The focus of the program is the selection of independent teams that will work on
 - An incentivization package in ANT
 
 ## Application process
-The application process is open and public and it will take place in this dedicated GitHub repository. If you expect your proposal to be approved in the next Aragon Network Vote you should submit your proposal to the Flock program at least one month before Aragon Governance Proposals are due, to give reviewers enough time to properly consider your proposal. You can find information about dates for the next Aragon Network Vote on the [Governance page](https://wiki.aragon.org/documentation/governance/) in the Aragon Wiki.
+The application process is open and public and it will take place in this dedicated GitHub repository. **If you expect your proposal to be approved in the next Aragon Network Vote you should submit your proposal to the Flock program at least one month before Aragon Governance Proposals are due**, to give reviewers enough time to properly consider your proposal. You can find information about dates for the next Aragon Network Vote on the [Governance page](https://wiki.aragon.org/documentation/governance/) in the Aragon Wiki.
 
 **How to submit your proposal**
 - Fork the Aragon Flock GitHub repository
 - Create a new directory with the team’s name inside the *teams/* folder
-- Inside the directory, create one file: *team.md* ([see template](https://github.com/aragon/flock/blob/master/docs/templates/team.md)), where you present the team
+- Inside the directory, create one file: *proposal.md* ([see proposal guide](https://github.com/LouisGrx/flock/blob/master/docs/Proposal%20guide.md)), where you present the overall application and team
 - Create a pull request to merge your submission into the Flock repository. In that pull request fill in all the relevant info described in the template
 - Amendments to the initial proposal can be made by creating a pull request over the existent pull request for the relevant review.  
 
@@ -29,17 +29,17 @@ The Aragon Association and representatives of the current Aragon teams will revi
 
 **Operation costs**
 
-Part of the funding is intended to cover the annual operating cost of each team. The minimum amount of funds available for operations is $1 million paid in ETH or DAI.
+Part of the funding is intended to cover the annual operating cost of each team. The minimum amount of funds available for operations is $300K paid in ETH or DAI.
 
 **Incentivization package**
 
 To align the interests of the teams with the creation of value of the Aragon Network, increase the team motivation and incentivize long term commitment, every team will be given an incentivization package in ANT. This incentivization package gives the team governance power over the project and the potential for greater financial upside. This incentive will be subject to vesting.
 
-After the definitive approval of funding as per the AGP-1 process, funds for operating costs will be disbursed to the approved teams in a lump sum.
+After the definitive approval of funding as per the AGP-1 process, funds for operating costs will be disbursed to the approved teams in a lump sum or in tranches.
 
 ## Decision rationale
 
-Decisions are made by the Aragon Association and representatives of the independent teams that are already part of the Aragon project. Everybody will participate in the review process. All decisions must be consistent with the [goals and values](https://github.com/aragon/AGPs/blob/master/AGPs/AGP-0.md) of the Aragon project and represent the interests of the Aragon community.
+Decisions are made by the Aragon Association in a process which includes gathering opinions from members of the independent teams that are already full-time contributors to the Aragon project. Everybody will participate in the review process. All decisions must be consistent with the [goals and values](https://github.com/aragon/AGPs/blob/master/AGPs/AGP-0.md) of the Aragon project and represent the interests of the Aragon community.
 
 **What do we look for in teams**
 
